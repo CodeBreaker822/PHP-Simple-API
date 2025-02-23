@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "**/.*": true
+    },
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": false
+}
