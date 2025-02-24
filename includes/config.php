@@ -2,8 +2,8 @@
 
 $servername = "localhost";
 $dbUsername = "root";
-$dbPass = "";
-$dbName = "api";
+$dbPass = "#Shinichi123";
+$dbName = "mces";
 
 $conn = mysqli_connect($servername, $dbUsername, $dbPass, $dbName);
 
