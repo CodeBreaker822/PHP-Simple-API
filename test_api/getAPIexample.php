@@ -68,7 +68,7 @@
                 method: 'GET',
                 data: {
                     token: token,
-                    request: "getUsers"
+                    request: "getClass"
                 },
                 success: function(response) {
                     $('#loader').hide();

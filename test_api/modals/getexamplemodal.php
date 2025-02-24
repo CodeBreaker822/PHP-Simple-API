@@ -112,7 +112,7 @@
                 <span style="color: #9cdcfe">method</span>: <span style="color: #ce9178">'GET'</span>,
                 <span style="color: #9cdcfe">data</span>: {
                     <span style="color: #9cdcfe">token</span>: <span style="color: #9cdcfe">token</span>,
-                    <span style="color: #9cdcfe">request</span>: <span style="color: #ce9178">"getUsers"</span>
+                    <span style="color: #9cdcfe">request</span>: <span style="color: #ce9178">"getClass"</span>
                 },
                 <span style="color: #9cdcfe">success</span>: <span style="color: #569cd6">function</span>(<span style="color: #9cdcfe">response</span>) {
                     <span style="color: #569cd6">$</span>(<span style="color: #ce9178">'#loader'</span>).<span style="color: #dcdcaa">hide</span>();
