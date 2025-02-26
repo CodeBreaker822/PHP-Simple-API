@@ -16,7 +16,6 @@
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 
 	<!-- Box Icons -->
 	<link href="node_modules/boxicons/css/boxicons.min.css" rel='stylesheet'>

@@ -206,6 +206,10 @@ $totalPages = ceil($totalItems / $itemsPerPage);
         </div>
     </div>
     
+
+    
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    
     <script>
     $(document).ready(function() {
         $('.permission-toggle, .status-toggle').change(function() {
@@ -238,9 +242,30 @@ $totalPages = ceil($totalItems / $itemsPerPage);
     
         $('.copy-token').click(function() {
             const token = $(this).data('token');
-            navigator.clipboard.writeText(token).then(function() {
-                alert('Token copied to clipboard!');
-            });
+            
+            // Create a temporary textarea element
+            const textarea = document.createElement('textarea');
+            textarea.value = token;
+            textarea.setAttribute('readonly', '');
+            textarea.style.position = 'absolute';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            
+            // Select the text and copy it
+            textarea.select();
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    alert('Token copied to clipboard!');
+                } else {
+                    alert('Failed to copy token');
+                }
+            } catch (err) {
+                alert('Failed to copy token: ' + err);
+            }
+            
+            // Clean up
+            document.body.removeChild(textarea);
         });
     
         $('.delete-token').click(function() {
